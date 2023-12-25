@@ -85,7 +85,7 @@ final class SwaggerBootloaderTest extends TestCase
                 HtmlRenderer::FORMAT => HtmlRenderer::class,
             ],
             'paths' => [
-                ($this->getContainer()->get(DirectoriesInterface::class))->get('app'),
+                rtrim(($this->getContainer()->get(DirectoriesInterface::class))->get('app'), '/') . '/src',
             ],
             'exclude' => null,
             'pattern' => null,
