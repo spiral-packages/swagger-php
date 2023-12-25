@@ -93,7 +93,7 @@ final class SwaggerBootloader extends Bootloader
                     HtmlRenderer::FORMAT => HtmlRenderer::class,
                 ],
                 'paths' => [
-                    $dirs->get('app'),
+                    rtrim($dirs->get('app'), '/').'/src',
                 ],
                 'exclude' => null,
                 'pattern' => null,
