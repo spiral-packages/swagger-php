@@ -7,7 +7,7 @@ on:
 name: cs
 
 jobs:
-    phpunit:
+    cs:
         uses: spiral/gh-actions/.github/workflows/cs.yml@master
         with:
             os: >-

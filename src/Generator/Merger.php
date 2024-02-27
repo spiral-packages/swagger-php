@@ -228,7 +228,7 @@ final class Merger
 
     private static function searchIndexedCollectionItem(
         array $collection,
-        int|null|string $member,
+        int|string|null $member,
         mixed $value
     ): bool|int|string {
         return array_search($value, array_column($collection, $member), true);

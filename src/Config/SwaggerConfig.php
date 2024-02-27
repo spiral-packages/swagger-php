@@ -69,7 +69,7 @@ final class SwaggerConfig extends InjectableConfig
     /**
      * @psalm-return array|non-empty-string|null
      */
-    public function getExclude(): null|array|string
+    public function getExclude(): array|string|null
     {
         return $this->config['exclude'] ?? null;
     }

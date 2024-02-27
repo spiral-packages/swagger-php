@@ -17,7 +17,7 @@ final class OpenApiOptions
         public readonly array|Finder|string $paths,
         public readonly array $config,
         public readonly ?string $version = null,
-        public readonly null|array|string $exclude = null,
+        public readonly array|string|null $exclude = null,
         public readonly ?string $pattern = null,
     ) {
     }
